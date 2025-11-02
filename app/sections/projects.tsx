@@ -1,10 +1,13 @@
-export default function projects() {
+export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400"
+      className="min-h-screen flex items-center justify-center"
     >
-      <h1 className="text-white text-6xl">My Projects</h1>
+      <div className="text-center">
+        <h1 className="text-white text-6xl font-bold">My Projects</h1>
+        <p className="text-white/80 text-xl mt-4">Check out my work</p>
+      </div>
     </section>
   );
 }

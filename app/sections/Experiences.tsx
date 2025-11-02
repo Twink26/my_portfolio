@@ -1,10 +1,13 @@
-export default function experience() {
+export default function Experience() {
   return (
     <section 
       id="experience" 
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-600 via-emerald-500 to-lime-400"
+      className="min-h-screen flex items-center justify-center"
     >
-      <h1 className="text-white text-6xl">My Experience</h1>
+      <div className="text-center">
+        <h1 className="text-white text-6xl font-bold">My Experience</h1>
+        <p className="text-white/80 text-xl mt-4">My professional journey</p>
+      </div>
     </section>
   );
 }
