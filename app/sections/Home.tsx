@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+
+
 
 export default function Home() {
   return (
@@ -39,15 +40,69 @@ export default function Home() {
   </div>
 
   {/* Social Links */}
-  <div className="mt-auto px-8 pb-6 flex items-center gap-5">
-  <a href="https://github.com/yourusername" target="_blank" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-white/20 transition">
-    <img src="/icons/github.svg" alt="GitHub" className="w-5 h-5" />
+  <div className="absolute bottom-8 right-8 flex flex-row gap-4">
+  <a 
+    href="https://github.com/twinklerana"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-15 h-15 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
+  >
+    <img 
+      src="/github.png" 
+      alt="GitHub" 
+      className="w-5 h-5 object-contain invert"
+    />
   </a>
-  </div>
+  <a 
+    href="https://linkdin.com/twinklerana"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-15 h-15 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
+  >
+    <img 
+      src="/linkedin.png" 
+      alt="linkedin" 
+      className="w-5 h-5 object-contain invert"
+    />
+  </a>
+    <a 
+    href="https://mail.com/twinklerana"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-15 h-15 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
+  >
+    <img 
+      src="/mail.png" 
+      alt="mail" 
+      className="w-5 h-5 object-contain invert"
+    />
+  </a>
+   <a 
+    href="https://x.com/twinklerana"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-15 h-15 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
+  >
+    <img 
+      src="/twitter.png" 
+      alt="x" 
+      className="w-5 h-5 object-contain invert"
+    />
+  </a>
+
+
+</div>
+
+   
+ 
+
+          
+  
 
 </div>
 
        
+
 
 
       </div>
