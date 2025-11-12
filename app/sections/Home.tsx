@@ -92,6 +92,17 @@ export default function Home() {
 
 
 </div>
+{/* Resume Button */}
+<div className="absolute bottom-8 left-8">
+  <a
+    href="/Twinkle_Rana_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-5 py-2 bg-white/10 backdrop-blur-sm text-white rounded-sm hover:bg-white/20 transition-colors border border-white/20"
+  >
+    View Resume
+  </a>
+</div>
 
    
  
