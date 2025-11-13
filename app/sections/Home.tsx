@@ -123,6 +123,59 @@ export default function Home() {
           <p className="text-white">
             I’m Twinkle Rana, a Computer Science student and full-stack developer passionate about building efficient, user-focused web applications. I love exploring how technology and business come together to create real-world impact. As the founder of PRINTNOAH, I combine creativity, design, and entrepreneurship to bring ideas to life.
           </p>
+          {/* Tech Stack section */}
+<div className="absolute left-[1px] top-[200px] w-[830px] flex-row md:flex-row p-6">
+  <h3 className="text-white text-xl font-semibold mb-4">Tech Stack</h3>
+  <div className="flex flex-wrap md:flex-row gap-4">
+    {/* React */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" />
+      <span className="text-white p-4 text-[15px] mt-2">React</span>
+    </div>
+    
+    {/* Node.js */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">Node.js</span>
+    </div>
+    
+    {/* TypeScript */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">TypeScript</span>
+    </div>
+    
+    {/* JavaScript */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">JavaScript</span>
+    </div>
+    
+    {/* Python */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">Python</span>
+    </div>
+    
+    {/* MongoDB */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">MongoDB</span>
+    </div>
+    
+    {/* Git */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">Git</span>
+    </div>
+    
+    {/* Tailwind CSS */}
+    <div className="bg-gray-900/60 rounded-md outline-2 outline-zinc-400/70 p-8 flex flex-row items-center justify-center w-27 h-14 ">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" className="w-12 h-12" />
+      <span className="text-white text-xs mt-2">Tailwind</span>
+    </div>
+  </div>
+</div>
         </div>
 
 
