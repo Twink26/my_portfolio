@@ -81,13 +81,13 @@ export default function Projects() {
     };
 
     const initParticles = () => {
-      particles = Array.from({ length: 60 }, () => ({
+      particles = Array.from({ length: 80 }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         size: Math.random() * 2 + 0.5,
-        speedX: (Math.random() - 0.5) * 0.3,
-        speedY: (Math.random() - 0.5) * 0.3,
-        opacity: Math.random() * 0.4 + 0.1,
+        speedX: (Math.random() - 0.9) * 0.9,
+        speedY: (Math.random() - 0.9) * 0.9,
+        opacity: Math.random() * 0.4 + 0.9,
       }));
     };
 
@@ -124,10 +124,10 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="relative min-h-screen py-20">
+    <section id="projects" className="relative min-h-screen py-9">
       <canvas
         ref={canvasRef}
-        className="fixed inset-0 -z-10 opacity-40"
+        className="fixed inset-0 -z-10 opacity-60"
       />
 
       <div className="max-w-6xl mx-auto px-4">
@@ -156,7 +156,7 @@ export default function Projects() {
         </div>
 
         {/* Grid */}
-        <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div layout className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div
@@ -164,7 +164,7 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                className="bg-white/5 rounded-xl overflow-hidden border border-white/10"
+                className="project-card"
               >
                 <img
                   src={project.image}
