@@ -112,8 +112,8 @@ export default function Home() {
       </div>
 
         {/* Right side card */}
-        <div className="absolute left-[730px] h-[720px] w-[830px] bg-sky-200/10 backdrop-blur-md rounded-xl border border-white/10 p-6">
-          <p className="text-white">
+        <div className="absolute left-[730px] h-[720px] w-[830px] rounded-xl p-6">
+          <p className="text-white ">
             I’m Twinkle Rana, a Computer Science student and full-stack developer passionate about building efficient, user-focused web applications. I love exploring how technology and business come together to create real-world impact. As the founder of PRINTNOAH, I combine creativity, design, and entrepreneurship to bring ideas to life.
           </p>
           {/* Tech Stack section */}

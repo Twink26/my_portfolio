@@ -84,10 +84,10 @@ export default function Projects() {
       particles = Array.from({ length: 80 }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        size: Math.random() * 2 + 0.5,
-        speedX: (Math.random() - 0.9) * 0.9,
-        speedY: (Math.random() - 0.9) * 0.9,
-        opacity: Math.random() * 0.4 + 0.9,
+        size: Math.random() * 1.6 + 1,
+        speedX: (Math.random() - 0.5) * 1,
+        speedY: (Math.random() - 0.8) * 0.9,
+        opacity: Math.random() * 0.1 + 0.5,
       }));
     };
 
