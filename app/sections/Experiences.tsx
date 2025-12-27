@@ -109,7 +109,7 @@ const ExperienceSection = () => {
       transform: isVisible
         ? "translateY(0) translateX(0)"
         : `translateY(30px) translateX(${isLeft ? "-20px" : "20px"})`,
-      transition: "all 0.7s ease-out",
+      transition: "all 0.9s ease-out",
     };
   };
 
@@ -297,7 +297,7 @@ const ExperienceSection = () => {
 
                         {/* Header */}
                         <header className="mb-5">
-                          <h2 className="text-xl lg:text-2xl font-semibold transition-colors duration-300 group-hover:text-[hsl(199,89%,48%)]">
+                          <h2 className="text-xl lg:text-2xl font-semibold transition-colors duration-300 group-hover:text-[hsl(0,0%,100%)]">
                             {experience.role}
                           </h2>
                           <p
