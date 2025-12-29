@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -16,15 +16,6 @@ interface Project {
   liveUrl: string;
   githubUrl: string;
   image: string;
-}
-
-interface Particle {
-  x: number;
-  y: number;
-  size: number;
-  speedX: number;
-  speedY: number;
-  opacity: number;
 }
 
 // ✅ FIX: use /public images (NOT @/assets)
@@ -57,78 +48,14 @@ const categories: ProjectCategory[] = ["All", "Frontend", "Backend", "Full Stack
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>("All");
-  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const filteredProjects = useMemo(() => {
     if (activeFilter === "All") return projects;
     return projects.filter((p) => p.category === activeFilter);
   }, [activeFilter]);
 
-  
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    let animationFrameId: number;
-    let particles: Particle[] = [];
-
-    const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    const initParticles = () => {
-      particles = Array.from({ length: 80 }, () => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 1.6 + 1,
-        speedX: (Math.random() - 0.5) * 1,
-        speedY: (Math.random() - 0.8) * 0.9,
-        opacity: Math.random() * 0.1 + 0.5,
-      }));
-    };
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      particles.forEach((p) => {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(34,197,94,${p.opacity})`;
-        ctx.fill();
-
-        p.x += p.speedX;
-        p.y += p.speedY;
-
-        if (p.x < 0) p.x = canvas.width;
-        if (p.y < 0) p.y = canvas.height;
-        if (p.x > canvas.width) p.x = 0;
-        if (p.y > canvas.height) p.y = 0;
-      });
-
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
-    resize();
-    initParticles();
-    animate();
-
-    window.addEventListener("resize", resize);
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-      window.removeEventListener("resize", resize);
-    };
-  }, []);
-
   return (
     <section id="projects" className="relative min-h-screen py-9">
-      <canvas
-        ref={canvasRef}
-        className="fixed inset-0 -z-10 opacity-60"
-      />
 
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-center text-white mb-4">

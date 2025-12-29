@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import Background from './components/background';
 import './globals.css';
 
 export default function RootLayout({
@@ -9,6 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Background />
         <Navbar />
         {children}
       </body>
