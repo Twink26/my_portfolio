@@ -139,9 +139,9 @@ export default function Background() {
         canvas.height / 2,
         Math.max(canvas.width, canvas.height) * 0.8
       );
-      gradient.addColorStop(0, 'rgba(88, 28, 135, 0.15)'); // Purple
-      gradient.addColorStop(0.5, 'rgba(30, 58, 138, 0.1)'); // Blue
-      gradient.addColorStop(1, 'rgba(10, 10, 26, 0.8)'); // Dark
+      gradient.addColorStop(0, 'rgba(3, 5, 61, 0.56)'); // Purple
+      gradient.addColorStop(0.5, 'rgba(1, 6, 39, 0.86)'); // Blue
+      gradient.addColorStop(1, 'rgba(1, 1, 20, 0.9)'); // Dark
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -297,7 +297,7 @@ export default function Background() {
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
-        style={{ background: 'linear-gradient(180deg,rgb(1, 1, 19) 0%,rgb(15, 1, 33) 50%,rgb(0, 0, 0) 100%)' }}
+        style={{ background: 'linear-gradient(180deg,rgb(1, 1, 58) 0%,rgb(2, 15, 60) 50%,rgb(0, 0, 0) 100%)' }}
       />
       
       {/* Grid overlay for depth */}
@@ -305,8 +305,8 @@ export default function Background() {
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(196, 181, 253, 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(196, 181, 253, 0.1) 1px, transparent 1px)
+            linear-gradient(rgba(91, 51, 251, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(81, 47, 216, 0.26) 1px, transparent 1px)
           `,
           backgroundSize: '50px 50px',
         }}

@@ -119,7 +119,7 @@ const ExperienceSection = () => {
 
   return (
     <main
-      
+      id="experience"
       className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div className="mx-auto max-w-6xl">
