@@ -22,14 +22,14 @@ interface Project {
 const projects: Project[] = [
   {
     id: "1",
-    name: "DevFlow",
+    name: "Tenzies-game",
     description:
-      "A real-time collaborative code editor with syntax highlighting, live cursors, and integrated chat.",
-    techStack: ["Next.js", "TypeScript", "Socket.io", "MongoDB"],
+      "A simple and fun React-based dice game where the goal is to roll until all dice show the same value. ",
+    techStack: ["React.js ", "CSS", "nanoid for unique IDs"],
     category: "Full Stack",
-    liveUrl: "#",
-    githubUrl: "#",
-    image: "/project-devflow.png",
+    liveUrl: "https://tenzies-game-seven-delta.vercel.app/",
+    githubUrl: "https://github.com/Twink26/Tenzies-game",
+    image: "/tenzies.png",
   },
   {
     id: "2",
@@ -59,7 +59,7 @@ export default function Projects() {
 
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-center text-white mb-4">
-          Projects<span className="text-green-400">.</span>
+          Projects
         </h2>
         <p className="text-center text-white/70 mb-12">
           Things I’ve built while learning and experimenting.
@@ -111,7 +111,7 @@ export default function Projects() {
                     {project.techStack.map((tech) => (
                       <span
                         key={tech}
-                        className="text-xs bg-white/10 px-2 py-1 rounded"
+                        className="text-xs bg-blue-300/50 px-2 py-1 rounded"
                       >
                         {tech}
                       </span>
