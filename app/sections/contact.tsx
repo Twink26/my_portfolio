@@ -1,7 +1,7 @@
 const featuredPosts = [
   {
     platform: "LinkedIn",
-    iconSrc: "/linkedin.png",
+    iconSrc: "/Public/linkedin.png",
     accentColor: "from-sky-400/40 to-sky-500/20",
     bgColor: "bg-sky-950/40",
     title: "How I made my first money!",
@@ -12,7 +12,7 @@ const featuredPosts = [
   },
   {
     platform: "Twitter / X",
-    iconSrc: "/twitter.png",
+    iconSrc: "/Public/twitter.png",
     accentColor: "from-slate-200/40 to-slate-500/10",
     bgColor: "bg-slate-900/60",
     title: "Leetcode 50 Problems Solved!",
@@ -23,7 +23,7 @@ const featuredPosts = [
   },
   {
     platform: "Medium",
-    iconSrc: "/medium.png", // add this to /public if not present
+    iconSrc: "/medium.png", // TODO: add medium.png to /public
     accentColor: "from-emerald-400/40 to-emerald-500/10",
     bgColor: "bg-emerald-950/40",
     title: "I’m not confused—I just have too many paths in front of me",
@@ -120,6 +120,10 @@ export default function contact() {
                       src={post.iconSrc}
                       alt={post.platform}
                       className="h-4 w-4 object-contain invert"
+                      onError={(e) => {
+                        // Fallback to a simple icon if image fails to load
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                   </div>
                   <span className="text-xs font-medium tracking-wide text-slate-300 uppercase">

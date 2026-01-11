@@ -9,7 +9,15 @@ export default function Home() {
         {/* Profile picture + name */}
         <div className="flex flex-row gap-6 items-center pt-8 px-8">
           <div className="w-[100px] h-[100px] rounded-2xl bg-gradient-to-br from-purple-400/20 to-violet-400/20 backdrop-blur-sm flex items-center justify-center overflow-hidden border border-violet-300/70 shadow-lg">
-            <img src="/Twinkle.jpg" alt="Profile" className="w-full h-full object-cover" />
+            <img 
+              src="/Twinkle.jpg" 
+              alt="Profile" 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // Fallback if image fails to load
+                e.currentTarget.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%234f46e5" width="100" height="100"/%3E%3Ctext fill="%23fff" font-family="Arial" font-size="12" x="50%25" y="50%25" text-anchor="middle" dy=".3em"%3ETR%3C/text%3E%3C/svg%3E';
+              }}
+            />
           </div>
 
           <div className="flex flex-col items-start">
