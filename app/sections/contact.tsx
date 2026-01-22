@@ -1,7 +1,9 @@
+'use client';
+
 const featuredPosts = [
   {
     platform: "LinkedIn",
-    iconSrc: "/Public/linkedin.png",
+    iconSrc: "/linkedin.png",
     accentColor: "from-sky-400/40 to-sky-500/20",
     bgColor: "bg-sky-950/40",
     title: "How I made my first money!",
@@ -12,7 +14,7 @@ const featuredPosts = [
   },
   {
     platform: "Twitter / X",
-    iconSrc: "/Public/twitter.png",
+    iconSrc: "/twitter.png",
     accentColor: "from-slate-200/40 to-slate-500/10",
     bgColor: "bg-slate-900/60",
     title: "Leetcode 50 Problems Solved!",

@@ -33,14 +33,14 @@ const projects: Project[] = [
   },
   {
     id: "2",
-    name: "CloudVault API",
+    name: "Monster Energy",
     description:
-      "Secure file storage API with encryption, chunked uploads, and S3-compatible storage.",
-    techStack: ["Node.js", "Express", "PostgreSQL"],
-    category: "Backend",
-    liveUrl: "#",
-    githubUrl: "#",
-    image: "/project-cloudvault.png",
+      "A website for Monster Energy.",
+    techStack: ["Next.js", "React", "Typescript", "Tailwind CSS", "Three.js", "Postcss", "GSAP"],
+    category: "Frontend",
+    liveUrl: "https://monsterenergy-opal.vercel.app/",
+    githubUrl: "https://github.com/Twink26/Monster",
+    image: "/monster.png",
   },
 ];
 
