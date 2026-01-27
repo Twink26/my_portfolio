@@ -182,7 +182,7 @@ export default function Home() {
 
             {/* AWS */}
             <div className="bg-gradient-to-br from-gray-900/70 to-gray-800/70 rounded-xl border border-purple-500/30 px-4 py-3 flex flex-row items-center justify-center gap-2 hover:border-purple-400/50 hover:scale-105 transition-all duration-300 shadow-lg">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" className="w-6 h-6" />
+              <img src="/aws.png" alt="AWS" className="w-6 h-6" />
               <span className="text-white text-sm font-medium">AWS</span>
             </div>
 
