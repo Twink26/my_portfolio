@@ -275,15 +275,13 @@ const ExperienceSection = () => {
                           {experience.points.map((point, pointIndex) => (
                             <li
                               key={pointIndex}
-                              className="flex gap-3 text-sm leading-relaxed transition-colors duration-300"
-                              style={{ color: "hsl(210 40% 98% / 0.08)" }}
+                              className="flex gap-3 text-sm leading-relaxed text-white/90 transition-colors duration-300 group-hover:text-white"
                             >
                               <span
-                                className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full transition-transform duration-300 group-hover:scale-125"
-                                style={{ backgroundColor: "hsl(210 40% 98% / 0.08)" }}
+                                className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-400/70 transition-all duration-300 group-hover:scale-125 group-hover:bg-purple-400"
                                 aria-hidden="true"
                               />
-                              <span>{point}</span>
+                              <span className="font-light">{point}</span>
                             </li>
                           ))}
                         </ul>
