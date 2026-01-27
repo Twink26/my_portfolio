@@ -8,7 +8,7 @@ const featuredPosts = [
     bgColor: "bg-sky-950/40",
     title: "How I made my first money!",
     insight: "Started a side hustle and made my first money!",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7376318448194289664/", // TODO: replace with specific LinkedIn post URL
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7376318448194289664/", 
     likes: "30+",
     views: "5.2k+",
   },
@@ -19,13 +19,13 @@ const featuredPosts = [
     bgColor: "bg-slate-900/60",
     title: "Leetcode 50 Problems Solved!",
     insight: "A post that blew when i posted about my progress on Leetcode!",
-    href: "https://x.com/twrana26/status/1953120378106331525?s=20", // TODO: replace with specific X post URL
+    href: "https://x.com/twrana26/status/1953120378106331525?s=20", 
     likes: "280+",
     views: "11k+",
   },
   {
     platform: "Medium",
-    iconSrc: "/medium.png", // TODO: add medium.png to /public
+    iconSrc: "/medium-icon.svg", 
     accentColor: "from-emerald-400/40 to-emerald-500/10",
     bgColor: "bg-emerald-950/40",
     title: "I’m not confused—I just have too many paths in front of me",
@@ -41,27 +41,27 @@ const codingPlatforms = [
     name: "LeetCode",
     metricLabel: "Problems solved",
     metricValue: "120+",
-    href: "#", // TODO: add your profile URL
+    href: "https://leetcode.com/u/TwinkleRana/", 
     iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg",
   },
   {
     name: "Codeforces",
     metricLabel: "Rating",
     metricValue: "—",
-    href: "#",
+    href: "https://codeforces.com/profile/tuviankal",
     iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeforces/codeforces-plain.svg",
   },
   {
     name: "CodeChef",
     metricLabel: "Contest rating",
-    metricValue: "—",
-    href: "#",
+    metricValue: "1300+",
+    href: "https://www.codechef.com/users/twinkle_rana",
     iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codechef/codechef-plain.svg",
   },
   {
     name: "GitHub",
     metricLabel: "Public repos",
-    metricValue: "10+",
+    metricValue: "20+",
     href: "https://github.com/twinklerana",
     iconSrc: "/github.png",
   },
@@ -69,8 +69,8 @@ const codingPlatforms = [
     name: "Codolio",
     metricLabel: "Portfolio",
     metricValue: "Live",
-    href: "#",
-    iconSrc: "/codolio.png", // optional: add to /public
+    href: "https://codolio.com/profile/Twinkle26",
+    iconSrc: "/codolio.png", 
   },
 ];
 
@@ -87,12 +87,11 @@ export default function contact() {
             In Public
           </p>
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-50 mb-3">
-            Quiet signals of consistency
+            Platforms where i build, write, and practice in public.
           </h2>
           <p className="text-sm sm:text-base text-slate-400">
             A curated snapshot of the places I build, write, and practice in
-            public. No feeds or noise—just the work I&apos;m comfortable being
-            judged on.
+            public. 
           </p>
         </header>
 

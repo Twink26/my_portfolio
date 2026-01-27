@@ -18,23 +18,22 @@ interface Experience {
 // ============================================
 const experiences: Experience[] = [
   {
-    role: "Frontend Developer Intern",
+    role: "fullstack developer",
     company: "Self / Freelance",
-    duration: "2024 – Present",
+    duration: "2025 – Present",
     points: [
-      "Building responsive, accessible UIs using React and Tailwind CSS with a focus on modern design patterns",
-      "Creating reusable component libraries to streamline development workflows and ensure consistency",
-      "Prioritizing clean UI architecture and performance optimization for seamless user experiences",
+      "Translating complex business requirements into intuitive user interfaces, helping clients increase user engagement by focusing on conversion-centric design",
+      
     ],
   },
   {
-    role: "Student Developer",
-    company: "University Projects",
-    duration: "2022 – Present",
+    role: "UI/UX Designer",
+    company: "Stepnex",
+    duration: "sep 2024 – oct 2024",
     points: [
-      "Developing full-stack applications using React, Node.js, and MongoDB for academic and personal projects",
-      "Practicing Data Structures & Algorithms regularly to strengthen problem-solving fundamentals",
-      "Building real-world project prototypes including e-commerce platforms and portfolio applications",
+      "Executed the full design process, from user research and persona development to high-fidelity wireframing and interactive prototyping using Figma.",
+      "Developed and maintained a design system including typography, color palettes, and reusable UI components to ensure brand consistency across products",
+      
     ],
   },
 ];
@@ -125,10 +124,10 @@ const ExperienceSection = () => {
       <div className="mx-auto max-w-6xl">
         {/* Section Heading */}
         <header className="mb-20 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-red-50 sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-purple-200 sm:text-5xl lg:text-6xl">
             Experience
           </h1>
-          <p className="mt-4 text-lg text-white/70">
+          <p className="mt-4 text-lg text-purple-300/80 font-light">
 
             My professional journey and key contributions
           </p>
@@ -142,14 +141,12 @@ const ExperienceSection = () => {
         >
           {/* Center Timeline Line - Desktop */}
           <div
-            className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 hidden md:block bg-violet-400/75"
+            className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 hidden md:block bg-purple-400/40"
             aria-hidden="true"
           >
             {/* Background line */}
             <div
-              className="absolute inset-0 bg-violet-400/50"
-
-              
+              className="absolute inset-0 bg-purple-400/20"
             />
           {/* Filled progress line */}
 <div
@@ -178,18 +175,13 @@ const ExperienceSection = () => {
 
           {/* Mobile Timeline Line */}
           <div
-            className="absolute left-2 top-0 h-full w-px md:hidden"
+            className="absolute left-2 top-0 h-full w-px md:hidden bg-purple-400/20"
             aria-hidden="true"
           >
             <div
-              className="absolute inset-0"
-              style={{ backgroundColor: "hsl(199 89% 48% / 0.08)" }}
-            />
-            <div
-              className="absolute top-0 left-0 w-full transition-all duration-150"
+              className="absolute top-0 left-0 w-full transition-all duration-150 bg-purple-400/40"
               style={{
                 height: `${scrollProgress * 100}%`,
-                backgroundColor: "hsl(199 89% 48% / 0.08)",
               }}
             />
           </div>
@@ -222,19 +214,10 @@ const ExperienceSection = () => {
                     />
                     {/* Main dot */}
                     <div
-                      className="h-4 w-4 rounded-full border-2 transition-all duration-500 flex items-center justify-center"
-                      style={{
-                        borderColor: dotProgress > 0.5 ? "hsl(199 89% 48% / 0.08)" : "hsl(199 89% 48% / 0.08)",
-                        backgroundColor: dotProgress > 0.5 ? "hsl(199 89% 48% / 0.08)" : "hsl(199 89% 48% / 0.08)",
-                      }}
+                      className={`h-4 w-4 rounded-full border-2 transition-all duration-500 flex items-center justify-center ${dotProgress > 0.5 ? "border-purple-400 bg-purple-400/30" : "border-purple-400/40 bg-transparent"}`}
                     >
                       <div
-                        className="h-2 w-2 rounded-full transition-all duration-500"
-                        style={{
-                          backgroundColor: "hsl(199 89% 48% / 0.08)",
-                          transform: `scale(${dotProgress > 0.5 ? 1 : 0})`,
-                          opacity: dotProgress > 0.5 ? 1 : 0,
-                        }}
+                        className={`h-2 w-2 rounded-full transition-all duration-500 bg-purple-400 ${dotProgress > 0.5 ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
                       />
                     </div>
                   </div>
@@ -245,11 +228,7 @@ const ExperienceSection = () => {
                     aria-hidden="true"
                   >
                     <div
-                      className="h-4 w-4 rounded-full border-2 transition-all duration-500"
-                      style={{
-                        borderColor: dotProgress > 0.3 ? "hsl(210 40% 98% / 0.08)" : "hsl(210 40% 98% / 0.08)",
-                        backgroundColor: dotProgress > 0.3 ? "hsl(210 40% 98% / 0.08)" : "hsl(210 40% 98% / 0.08)",
-                      }}
+                      className={`h-4 w-4 rounded-full border-2 transition-all duration-500 ${dotProgress > 0.3 ? "border-purple-400 bg-purple-400/30" : "border-purple-400/40 bg-transparent"}`}
                     />
                   </div>
 
@@ -260,36 +239,14 @@ const ExperienceSection = () => {
                   >
                     {/* Card */}
                     <div
-                      className="group relative rounded-xl p-6 lg:p-8 transition-all duration-300 ease-out hover:-translate-y-1 cursor-pointer"
-                      style={{
-                        backgroundColor: "hsl(210 40% 98% / 0.08)",
-                        border: `1px solid ${"hsl(210 40% 98% / 0.08)"}`,
-                        boxShadow: `0 4px 20px -4px ${"hsl(210 40% 98% / 0.08)"}cc`,
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget;
-                        el.style.borderColor = `${"hsl(210 40% 98% / 0.08)"}60`;
-                        el.style.backgroundColor = "hsl(210 40% 98% / 0.08)";
-                        el.style.boxShadow = `0 8px 30px -4px ${"hsl(210 40% 98% / 0.08)"}25`;
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget;
-                        el.style.borderColor = "hsl(210 40% 98% / 0.08)";
-                        el.style.backgroundColor = "hsl(210 40% 98% / 0.08)";
-                        el.style.boxShadow = `0 4px 20px -4px ${"hsl(210 40% 98% / 0.08)"}cc`;
-                      }}
+                      className="group relative rounded-xl p-6 lg:p-8 transition-all duration-300 ease-out hover:-translate-y-1 cursor-pointer bg-white/5 border border-purple-400/20 hover:border-purple-400/40 hover:bg-white/8 shadow-lg hover:shadow-purple-500/10"
                     >
                       {/* Content */}
                       <div className="relative z-10">
                         {/* Duration Badge */}
                         <div className="mb-4">
                           <time
-                            className="inline-flex rounded-full px-3 py-1 text-xs font-medium transition-colors duration-300"
-                            style={{
-                              backgroundColor: `${"hsl(210 40% 98% / 0.08)"}15`,
-                              color: "hsl(210 40% 98% / 0.08)",
-                              border: `1px solid ${"hsl(210 40% 98% / 0.08)"}30`,
-                            }}
+                            className="inline-flex rounded-full px-3 py-1 text-xs font-medium text-purple-200 bg-purple-500/20 border border-purple-400/30 transition-colors duration-300 group-hover:bg-purple-500/30 group-hover:border-purple-400/50"
                           >
                             {experience.duration}
                           </time>
@@ -297,12 +254,11 @@ const ExperienceSection = () => {
 
                         {/* Header */}
                         <header className="mb-5">
-                          <h2 className="text-xl lg:text-2xl font-semibold transition-colors duration-300 group-hover:text-[hsl(0,0%,100%)]">
+                          <h2 className="text-xl lg:text-2xl font-semibold text-white transition-colors duration-300 group-hover:text-purple-300">
                             {experience.role}
                           </h2>
                           <p
-                            className="mt-1 text-sm font-medium transition-colors duration-300"
-                            style={{ color: "hsl(210 40% 98% / 0.08)" }}
+                            className="mt-1 text-sm font-medium text-purple-300/70 transition-colors duration-300 group-hover:text-purple-300/90"
                           >
                             {experience.company}
                           </p>
@@ -310,8 +266,7 @@ const ExperienceSection = () => {
 
                         {/* Divider */}
                         <div
-                          className="mb-5 h-px w-full transition-colors duration-300"
-                          style={{ backgroundColor: "hsl(210 40% 98% / 0.08)"}}
+                          className="mb-5 h-px w-full bg-purple-400/20 transition-colors duration-300 group-hover:bg-purple-400/30"
                           aria-hidden="true"
                         />
 
@@ -336,10 +291,7 @@ const ExperienceSection = () => {
 
                       {/* Connector line - Desktop */}
                       <div
-                        className={`absolute top-10 hidden md:block h-px w-4 lg:w-8 transition-colors duration-300 ${isLeft ? "-right-4 lg:-right-8" : "-left-4 lg:-left-8"}`}
-                        style={{
-                          backgroundColor: dotProgress > 0.5 ? `${"hsl(210 40% 98% / 0.08)"}80` : "hsl(210 40% 98% / 0.08)",
-                        }}
+                        className={`absolute top-10 hidden md:block h-px w-4 lg:w-8 transition-colors duration-300 ${isLeft ? "-right-4 lg:-right-8" : "-left-4 lg:-left-8"} ${dotProgress > 0.5 ? "bg-purple-400/60" : "bg-purple-400/20"}`}
                         aria-hidden="true"
                       />
                     </div>
@@ -355,11 +307,7 @@ const ExperienceSection = () => {
             aria-hidden="true"
           >
             <div
-              className="h-3 w-3 rounded-full transition-all duration-500"
-              style={{
-                backgroundColor: scrollProgress > 0.9 ? "hsl(210 40% 98% / 0.08)" : "hsl(210 40% 98% / 0.08)",
-                boxShadow: scrollProgress > 0.9 ? `0 0 12px ${"hsl(210 40% 98% / 0.08)"}80` : "none",
-              }}
+              className={`h-3 w-3 rounded-full transition-all duration-500 ${scrollProgress > 0.9 ? "bg-purple-400 shadow-[0_0_12px_rgba(192,132,252,0.5)]" : "bg-purple-400/40"}`}
             />
           </div>
         </section>
