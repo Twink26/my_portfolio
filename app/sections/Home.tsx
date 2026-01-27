@@ -51,7 +51,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center py-4 bg-indigo-900/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold text-purple-200">90 Days</p>
+            <p className="text-2xl font-bold text-purple-200">150+ Days</p>
             <span className="text-purple-300/80 text-xs mt-1">Active on GitHub</span>
           </div>
 
@@ -116,7 +116,7 @@ export default function Home() {
         {/* Resume Button */}
         <div className="absolute bottom-8 left-8">
           <a
-            href="/Twinkle_Rana_Resume.pdf"
+            href="https://drive.google.com/file/d/1gZfjVoS3VA3vDQrRaVHSrUczjl0Uf4ep/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-gradient-to-r from-indigo-600/20 to-violet-600/30 backdrop-blur-sm text-white rounded-xl hover:from-purple-600/40 hover:to-violet-600/40 transition-all duration-300 border border-purple-400/30 shadow-lg font-medium text-sm"
@@ -196,6 +196,12 @@ export default function Home() {
             <div className="bg-gradient-to-br from-gray-900/70 to-gray-800/70 rounded-xl border border-purple-500/30 px-4 py-3 flex flex-row items-center justify-center gap-2 hover:border-purple-400/50 hover:scale-105 transition-all duration-300 shadow-lg">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="w-6 h-6" />
               <span className="text-white text-sm font-medium">C++</span>
+            </div>
+
+            {/* Python */}
+            <div className="bg-gradient-to-br from-gray-900/70 to-gray-800/70 rounded-xl border border-purple-500/30 px-4 py-3 flex flex-row items-center justify-center gap-2 hover:border-purple-400/50 hover:scale-105 transition-all duration-300 shadow-lg">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" />
+              <span className="text-white text-sm font-medium">Python</span>
             </div>
           </div>
         </div>
