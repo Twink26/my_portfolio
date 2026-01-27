@@ -49,14 +49,14 @@ const codingPlatforms = [
     metricLabel: "Rating",
     metricValue: "—",
     href: "https://codeforces.com/profile/tuviankal",
-    iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeforces/codeforces-plain.svg",
+    iconSrc: "codeforces.png",
   },
   {
     name: "CodeChef",
     metricLabel: "Contest rating",
     metricValue: "1300+",
     href: "https://www.codechef.com/users/twinkle_rana",
-    iconSrc: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codechef/codechef-plain.svg",
+    iconSrc: "codechef.png",
   },
   {
     name: "GitHub",
@@ -70,7 +70,7 @@ const codingPlatforms = [
     metricLabel: "Portfolio",
     metricValue: "Live",
     href: "https://codolio.com/profile/Twinkle26",
-    iconSrc: "/codolio.png", 
+    iconSrc: "/codolio.jpg", 
   },
 ];
 
