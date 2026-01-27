@@ -181,9 +181,7 @@ export default function contact() {
             <h3 className="text-sm font-medium tracking-[0.25em] text-slate-400 uppercase">
               Coding platforms snapshot
             </h3>
-            <span className="text-xs text-slate-500">
-              Progress over time, not overnight
-            </span>
+            
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
