@@ -42,6 +42,17 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Twink26/Monster",
     image: "/monster.png",
   },
+  {
+    id: "3",
+    name: "Cal.com Clone",
+    description:
+      "A clone of the Cal.com scheduling platform.",
+    techStack: ["Node.js", "Express.js", "React", "Typescript", "Tailwind CSS", "PostgreSQL", "Prisma", "Neon", "Vercel"],
+    category: "Full Stack",
+    liveUrl: "https://cal-clone-rose.vercel.app/",
+    githubUrl: "https://github.com/Twink26/Cal-clone",
+    image: "/Cal-clone.png",
+  }
 ];
 
 const categories: ProjectCategory[] = ["All", "Frontend", "Backend", "Full Stack"];
