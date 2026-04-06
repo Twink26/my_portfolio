@@ -4,12 +4,12 @@ export default function Home() {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen px-4 py-24 sm:px-6 lg:px-8 lg:py-0"
+      className="relative min-h-screen px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-0"
     >
       {/* Main card */}
       <div className="relative mx-auto w-full max-w-2xl bg-gradient-to-br from-slate-500/20 via-blue-950/20 to-slate-950/20 backdrop-blur-md rounded-2xl border border-purple-100/30 shadow-2xl flex flex-col overflow-hidden lg:absolute lg:left-9 lg:top-1/2 lg:h-[700px] lg:w-[670px] lg:-translate-y-1/2 lg:mx-0">
         {/* Profile picture + name */}
-        <div className="flex flex-row gap-4 sm:gap-6 items-center pt-6 sm:pt-8 px-5 sm:px-8">
+        <div className="flex flex-row gap-4 sm:gap-6 items-center pt-7 sm:pt-8 px-5 sm:px-8">
           <div className="w-20 h-20 sm:w-[100px] sm:h-[100px] rounded-2xl bg-gradient-to-br from-purple-400/20 to-violet-400/20 backdrop-blur-sm flex items-center justify-center overflow-hidden border border-violet-300/70 shadow-lg">
             <img 
               src="/Twinkle.jpg" 
@@ -23,8 +23,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-start">
-            <p className="text-purple-300 text-base sm:text-lg font-light tracking-wide">Hi I'M</p>
-            <h1 className="text-white text-3xl sm:text-5xl font-bold tracking-tight">Twinkle Rana</h1>
+            <p className="text-purple-300 text-lg sm:text-lg font-light tracking-wide">Hi I'M</p>
+            <h1 className="text-white text-4xl sm:text-5xl font-bold tracking-tight">Twinkle Rana</h1>
           </div>
         </div>
 
@@ -44,19 +44,19 @@ export default function Home() {
         </div>
 
         {/* Stats row */}
-        <div className="px-5 sm:px-8 mt-8 sm:mt-12 lg:mt-20 grid grid-cols-3 gap-2 sm:gap-4">
+        <div className="px-5 sm:px-8 mt-8 sm:mt-12 lg:mt-20 grid grid-cols-3 gap-3 sm:gap-4">
           <div className="flex flex-col items-center py-4 bg-indigo-800/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold text-purple-200">100+</p>
+            <p className="text-2xl sm:text-2xl font-bold text-purple-200">100+</p>
             <span className="text-purple-300/80 text-xs mt-1">Problems Solved</span>
           </div>
 
           <div className="flex flex-col items-center py-4 bg-indigo-900/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold text-purple-200">150+ Days</p>
+            <p className="text-2xl sm:text-2xl font-bold text-purple-200">150+ Days</p>
             <span className="text-purple-300/80 text-xs mt-1">Active on GitHub</span>
           </div>
 
           <div className="flex flex-col items-center py-4 bg-indigo-900/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold text-purple-200">3+</p>
+            <p className="text-2xl sm:text-2xl font-bold text-purple-200">3+</p>
             <span className="text-purple-300/80 text-xs mt-1">Hackathons</span>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function Home() {
         {/* Tech Stack section */}
         <div className="mt-8">
           <h3 className="text-white text-2xl font-semibold mb-6">Tech Stack</h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 justify-start">
             {/* React */}
             <div className="bg-gradient-to-br from-gray-900/70 to-gray-800/70 rounded-xl border border-purple-500/30 px-4 py-3 flex flex-row items-center justify-center gap-2 hover:border-purple-400/50 hover:scale-105 transition-all duration-300 shadow-lg">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" />
