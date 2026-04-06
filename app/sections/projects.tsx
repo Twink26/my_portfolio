@@ -69,7 +69,7 @@ export default function Projects() {
     <section id="projects" className="relative min-h-screen py-9">
 
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center text-white mb-4">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center text-white mb-4">
           Projects
         </h2>
         <p className="text-center text-white/70 mb-12">
@@ -77,12 +77,12 @@ export default function Projects() {
         </p>
 
         {/* Filters */}
-        <div className="flex justify-center gap-2 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
           {categories.map((c) => (
             <button
               key={c}
               onClick={() => setActiveFilter(c)}
-              className={`px-4 py-2 rounded-lg text-sm ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm ${
                 activeFilter === c
                   ? "bg-green-500 text-black"
                   : "bg-white/10 text-white"
@@ -94,7 +94,7 @@ export default function Projects() {
         </div>
 
         {/* Grid */}
-        <motion.div layout className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <motion.div layout className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div

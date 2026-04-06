@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center px-4"
+      className="relative min-h-screen px-4 py-24 sm:px-6 lg:px-8 lg:py-0"
     >
       {/* Main card */}
-      <div className="absolute left-9 top-1/2 -translate-y-1/2 h-[700px] w-[670px] bg-gradient-to-br from-slate-500/20 via-blue-950/20 to-slate-950/20 backdrop-blur-md rounded-2xl border border-purple-100/30 shadow-2xl flex flex-col overflow-hidden">
+      <div className="relative mx-auto w-full max-w-2xl bg-gradient-to-br from-slate-500/20 via-blue-950/20 to-slate-950/20 backdrop-blur-md rounded-2xl border border-purple-100/30 shadow-2xl flex flex-col overflow-hidden lg:absolute lg:left-9 lg:top-1/2 lg:h-[700px] lg:w-[670px] lg:-translate-y-1/2 lg:mx-0">
         {/* Profile picture + name */}
-        <div className="flex flex-row gap-6 items-center pt-8 px-8">
-          <div className="w-[100px] h-[100px] rounded-2xl bg-gradient-to-br from-purple-400/20 to-violet-400/20 backdrop-blur-sm flex items-center justify-center overflow-hidden border border-violet-300/70 shadow-lg">
+        <div className="flex flex-row gap-4 sm:gap-6 items-center pt-6 sm:pt-8 px-5 sm:px-8">
+          <div className="w-20 h-20 sm:w-[100px] sm:h-[100px] rounded-2xl bg-gradient-to-br from-purple-400/20 to-violet-400/20 backdrop-blur-sm flex items-center justify-center overflow-hidden border border-violet-300/70 shadow-lg">
             <img 
               src="/Twinkle.jpg" 
               alt="Profile" 
@@ -23,13 +23,13 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-start">
-            <p className="text-purple-300 text-lg font-light tracking-wide">Hi I'M</p>
-            <h1 className="text-white text-5xl font-bold tracking-tight">Twinkle Rana</h1>
+            <p className="text-purple-300 text-base sm:text-lg font-light tracking-wide">Hi I'M</p>
+            <h1 className="text-white text-3xl sm:text-5xl font-bold tracking-tight">Twinkle Rana</h1>
           </div>
         </div>
 
         {/* GitHub Contribution Graph */}
-        <div className="px-8 mt-6 mb-4">
+        <div className="px-5 sm:px-8 mt-5 sm:mt-6 mb-4">
           <div className="bg-black/30 rounded-xl p-4 border border-blue-300/20">
             <h3 className="text-purple-300 text-sm font-medium mb-3">GitHub Contributions</h3>
             <div className="flex justify-center items-center">
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         {/* Stats row */}
-        <div className="px-8 mt-20 grid grid-cols-3 gap-4">
+        <div className="px-5 sm:px-8 mt-8 sm:mt-12 lg:mt-20 grid grid-cols-3 gap-2 sm:gap-4">
           <div className="flex flex-col items-center py-4 bg-indigo-800/10 rounded-lg border border-purple-300/20">
             <p className="text-2xl font-bold text-purple-200">100+</p>
             <span className="text-purple-300/80 text-xs mt-1">Problems Solved</span>
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
 
         {/* Social Links */}
-        <div className="absolute bottom-8 right-8 flex flex-row gap-3">
+        <div className="mt-6 px-5 sm:px-8 pb-4 flex flex-row gap-2 sm:gap-3 justify-end lg:absolute lg:bottom-8 lg:right-8 lg:mt-0 lg:px-0 lg:pb-0">
           <a 
             href="https://github.com/twinklerana"
             target="_blank"
@@ -114,12 +114,12 @@ export default function Home() {
         </div>
 
         {/* Resume Button */}
-        <div className="absolute bottom-8 left-8">
+        <div className="px-5 sm:px-8 pb-6 lg:absolute lg:bottom-8 lg:left-8 lg:px-0 lg:pb-0">
           <a
             href="https://drive.google.com/file/d/1gZfjVoS3VA3vDQrRaVHSrUczjl0Uf4ep/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient-to-r from-indigo-600/20 to-violet-600/30 backdrop-blur-sm text-white rounded-xl hover:from-purple-600/40 hover:to-violet-600/40 transition-all duration-300 border border-purple-400/30 shadow-lg font-medium text-sm"
+            className="inline-flex px-6 py-3 bg-gradient-to-r from-indigo-600/20 to-violet-600/30 backdrop-blur-sm text-white rounded-xl hover:from-purple-600/40 hover:to-violet-600/40 transition-all duration-300 border border-purple-400/30 shadow-lg font-medium text-sm"
           >
             View Resume
           </a>
@@ -127,9 +127,9 @@ export default function Home() {
       </div>
 
       {/* Right side card */}
-      <div className="absolute left-[830px] top-1/2 -translate-y-1/2 h-[400px] w-[830px] ">
+      <div className="relative mx-auto mt-10 w-full max-w-3xl lg:absolute lg:left-[830px] lg:top-1/2 lg:mt-0 lg:h-[400px] lg:w-[830px] lg:-translate-y-1/2">
         <div className="mb-6">
-          <p className="text-white/90 text-lg leading-relaxed font-light">
+          <p className="text-white/90 text-base sm:text-lg leading-relaxed font-light">
             I'm <span className="text-purple-300 font-medium">Twinkle Rana</span>, a Computer Science student and full-stack developer passionate about building efficient, user-focused web applications. I love exploring how technology and business come together to create real-world impact. As the founder of <span className="text-purple-300 font-medium">PRINTNOAH</span>, I combine creativity, design, and entrepreneurship to bring ideas to life.
           </p>
         </div>

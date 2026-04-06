@@ -7,9 +7,9 @@ export default function Navbar() {
   ];
   
   return (
-    <nav className="fixed right-0 top-1/2 -translate-y-1/2 h-full flex items-center p-5 z-50">
-      <div className="bg-gradient-to-b from-blue-900/20 via-indigo-950/20 to-blue-900/20 backdrop-blur-md border border-purple-300/30 rounded-2xl shadow-2xl py-8 px-4">
-        <ul className="flex flex-col items-center space-y-11">
+    <nav className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 md:left-auto md:bottom-auto md:right-0 md:top-1/2 md:translate-x-0 md:-translate-y-1/2 md:h-full md:flex md:items-center md:p-5">
+      <div className="bg-gradient-to-b from-blue-900/20 via-indigo-950/20 to-blue-900/20 backdrop-blur-md border border-purple-300/30 rounded-2xl shadow-2xl py-3 px-4 md:py-8 md:px-4">
+        <ul className="flex flex-row items-center gap-6 md:flex-col md:space-y-11 md:gap-0">
           {navItems.map((item) => (
             <li key={item.name}>
               <a 
