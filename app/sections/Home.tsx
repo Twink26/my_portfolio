@@ -46,17 +46,17 @@ export default function Home() {
         {/* Stats row */}
         <div className="px-5 sm:px-8 mt-8 sm:mt-12 lg:mt-20 grid grid-cols-3 gap-3 sm:gap-4">
           <div className="flex min-h-[110px] flex-col items-center justify-center py-4 bg-indigo-800/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold leading-none text-purple-200">100+</p>
+            <p className="text-2xl font-bold leading-none text-purple-200">150+</p>
             <span className="mt-2 text-center text-[11px] leading-snug text-purple-300/80 sm:text-xs">Problems Solved</span>
           </div>
 
           <div className="flex min-h-[110px] flex-col items-center justify-center py-4 bg-indigo-900/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold leading-none text-purple-200">150+ Days</p>
+            <p className="text-2xl font-bold leading-none text-purple-200">200+ Days</p>
             <span className="mt-2 text-center text-[11px] leading-snug text-purple-300/80 sm:text-xs">Active on GitHub</span>
           </div>
 
           <div className="flex min-h-[110px] flex-col items-center justify-center py-4 bg-indigo-900/10 rounded-lg border border-purple-300/20">
-            <p className="text-2xl font-bold leading-none text-purple-200">3+</p>
+            <p className="text-2xl font-bold leading-none text-purple-200">3</p>
             <span className="mt-2 text-center text-[11px] leading-snug text-purple-300/80 sm:text-xs">Hackathons</span>
           </div>
         </div>

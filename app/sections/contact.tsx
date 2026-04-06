@@ -28,11 +28,11 @@ const featuredPosts = [
     iconSrc: "/medium-icon.svg", 
     accentColor: "from-emerald-400/40 to-emerald-500/10",
     bgColor: "bg-emerald-950/40",
-    title: "I’m not confused—I just have too many paths in front of me",
-    insight: "A short reflection on product thinking, constraints, and learning by doing.",
-    href: "https://medium.com/@startwinklerana/im-not-confused-i-just-have-too-many-paths-in-front-of-me-e6dae199b210", // TODO: replace with specific Medium article URL
-    likes: "0",
-    views: "0",
+    title: "Why Users Save Content but Never Revisit It - and How Platforms Can Fix It",
+    insight: "An analysis of the gap between saving intent and actual revisit behavior across social and video platforms.",
+    href: "https://medium.com/@startwinklerana/why-users-save-content-but-never-revisit-it-and-how-platforms-can-fix-it-47e0de3caf45", 
+    likes: "10",
+    views: "300",
   },
 ];
 
