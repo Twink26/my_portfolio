@@ -64,7 +64,7 @@ export default function Home() {
         {/* Social Links */}
         <div className="mt-6 px-5 sm:px-8 pb-4 flex flex-row gap-2 sm:gap-3 justify-end lg:absolute lg:bottom-8 lg:right-8 lg:mt-0 lg:px-0 lg:pb-0">
           <a 
-            href="https://github.com/twinklerana"
+            href="https://github.com/Twink26"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-xl bg-indigo-900/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center hover:bg-purple-900/30 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -76,7 +76,7 @@ export default function Home() {
             />
           </a>
           <a 
-            href="https://linkedin.com/in/twinklerana"
+            href="https://www.linkedin.com/in/twinkle-rana/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-xl bg-indigo-900/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center hover:bg-purple-900/30 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -88,7 +88,7 @@ export default function Home() {
             />
           </a>
           <a 
-            href="mailto:twinklerana@example.com"
+            href="mailto:startwinklerana@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-xl bg-indigo-900/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center hover:bg-purple-900/30 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 shadow-lg"
@@ -100,7 +100,7 @@ export default function Home() {
             />
           </a>
           <a 
-            href="https://x.com/twinklerana"
+            href="https://x.com/twrana26"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-xl bg-indigo-900/20 backdrop-blur-sm border border-purple-500/30 flex items-center justify-center hover:bg-purple-900/30 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 shadow-lg"
