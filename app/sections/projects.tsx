@@ -52,7 +52,19 @@ const projects: Project[] = [
     liveUrl: "https://cal-clone-rose.vercel.app/",
     githubUrl: "https://github.com/Twink26/Cal-clone",
     image: "/Cal-clone.png",
+  },
+  {
+    id: "4",
+    name: "Interactive Calendar",
+    description:
+    "An Interactive Calendar with features like adding events, deleting events, and editing events.",
+    techStack: ["Typescript", "Next.js", "Tailwind CSS", "Vercel"],
+    category: "Frontend",
+    liveUrl: "https://interactive-calendar-component-alpha.vercel.app/",
+    githubUrl: "https://github.com/Twink26/Interactive-Calendar-component",
+    image: "/interactive-calendar.png",
   }
+   
 ];
 
 const categories: ProjectCategory[] = ["All", "Frontend", "Backend", "Full Stack"];
